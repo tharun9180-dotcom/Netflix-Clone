@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-bg: #111315;
+  --nav-color: #d91f27;
+  --text-color: #ffffff;
+  --text-secondary: #9c9d9d;
+  --font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg);
+  height: 100vh;
+  width: 100%;
+  font-family: var(--font);
+  color: var(--text-color);
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  border-right: 1px solid var(--text-secondary);
+}
+
+.sidebar .sidebar-nav ul,
+header nav ul {
+  list-style: none;
+  padding: 0px;
+}
+.sidebar .sidebar-nav ul li {
+  margin-bottom: 20px;
+  padding-left: 1.5rem;
+}
+.sidebar .sidebar-nav ul li a,
+header nav ul li a {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+.sidebar .sidebar-nav ul li a.active {
+  color: var(--nav-color);
+}
+.sidebar .sidebar-nav ul li a:hover {
+  color: var(--nav-color);
+}
+
+/* OR if you want the border on the <li> instead: */
+.sidebar .sidebar-nav ul li a.active + li,
+.sidebar .sidebar-nav ul li:has(> a.active) {
+  border-left: 4px solid red; /* modern selector, not supported in all browsers */
+}
+header nav ul {
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+}
+header nav ul li .input-search-area input {
+  border: 0px;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+}
+header nav ul li .input-search-area input:focus-visible,
+header nav ul li .input-search-area input:focus-within {
+  
+    outline: none;
+  box-shadow: none;
+  border: none; /* Optional – remove if you still want borders */
+}
+
+header nav ul li .input-search-area {
+  border: 1px solid var(--text-secondary);
+  padding: 10px 14px;
+  border-radius: 25px;
+  width: 300px;
+}
+
+header nav ul li .profile-image {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.header-border {
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.slider-card {
+  position: relative;
+  border-radius: 15px;
+  border: none;
+}
+
+.text-position {
+  position: absolute;
+  color: #fff;
+  bottom: 10%;
+  left: 5%;
+}
+.text-position p {
+  color: var(--text-secondary);
+}
+
+.slider-card img {
+  object-fit: cover;
+  border-radius: 15px;
+  height: 350px;
+  width: 100%;
+}
+
+.movie-card {
+  width: 9rem;
+  height: 11rem;
+  border-radius: 15px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.popular-movie-card {
+  width: 6rem;
+  height: 8rem;
+  border-radius: 15px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.movie-card img,
+.popular-movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.popular-movie-section p {
+  color: var(--text-secondary);
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.popular-movie-section small{
+  font-size: 11px;
+  color: var(--text-secondary);
+} 

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Slick Theme (optional) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="d-flex gap-2 h-100">
+      <div class="sidebar">
+        <div class="text-center mt-3">
+          <h5>Netflix</h5>
+        </div>
+        <div class="my-5">
+          <nav class="sidebar-nav">
+            <ul>
+              <li>
+                <a href="#" class="active"
+                  ><i class="bi bi-house-door-fill me-2"></i>Home</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-heart me-2"></i>Watch List</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-calendar me-2"></i>Coming Soon</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-alarm me-2"></i>Discovery</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="my-5">
+          <nav class="sidebar-nav">
+            <ul>
+              <li>
+                <a href="#" class=""
+                  ><i class="bi bi-person me-2"></i>Friends</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-star me-2"></i>Parties</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-disc me-2"></i>Media</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="my-5">
+          <nav class="sidebar-nav">
+            <ul>
+              <li>
+                <a href="#" class=""><i class="bi bi-gear me-2"></i>Settings</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-box-arrow-in-right me-2"></i>Logout</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container-fluid w-100">
+        <div
+          class="my-3 d-flex justify-content-between align-items-center header-border"
+        >
+          <header>
+            <nav>
+              <ul>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Animes</a></li>
+                <li>
+                  <div class="input-search-area">
+                    <input type="text" placeholder="Search here" />
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <header>
+            <nav>
+              <ul>
+                <li>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+                    class="img-fluid profile-image"
+                  />
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+        <div class="row">
+          <div class="col-md-9 col-lg-9 col-xl-9 col-sm-12">
+            <div class="container">
+              <div class="slider">
+                <div class="card slider-card">
+                  <img
+                    src="https://storage.googleapis.com/prune/blog_image/money-heist.jpg"
+                    class="img-fluid"
+                  />
+                  <div class="text-position">
+                    <h3>Money Heist</h3>
+                    <p>Crime, Drama</p>
+                    <button class="btn btn-danger me-2">Watch</button>
+                    <button class="btn btn-secondary">+</button>
+                  </div>
+                </div>
+                <div class="card slider-card">
+                  <img
+                    src="https://4kwallpapers.com/images/wallpapers/squid-game-season-2-2560x1440-20373.jpg"
+                    class="img-fluid"
+                  />
+                  <div class="text-position">
+                    <button class="btn btn-danger me-2">Watch</button>
+                    <button class="btn btn-secondary">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <section>
+                <h5>New Release</h5>
+                <div class="movie-slider">
+                  <div class="card movie-card">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFsBCYXxz06Rqj-0UR9Uy3o6R-r1Dra2Tx6w&s"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://qqcdnpictest.mxplay.com/pic/bce7ae02445dad432bdab581e180ceef/en/2x3/312x468/d5f863cd13cc307123989701f8b72fdf_1280x1920.webp"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://m.media-amazon.com/images/I/91AwiX6Z6BL.jpg"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://wp.scoopwhoop.com/wp-content/uploads/2024/04/03170645/image-1.png"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNHbiynGddWiwSXEmfcjw1vlNdyE0zjYIMfQ&s"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://qqcdnpictest.mxplay.com/pic/5fac1cba6cb2cbe60da66436156ab0ac/en/2x3/312x468/test_pic1737361716276.webp"
+                      alt="movie-img"
+                    />
+                  </div>
+
+                  <div class="card movie-card">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/850/1000/jn3hocw0/poster/j/s/q/medium-hollywood-movie-wall-poster-pirates-of-the-caribbean-dead-original-imaf9uv7zzgp6wvg.jpeg?q=90&crop=false"
+                      alt="movie-img"
+                    />
+                  </div>
+                </div>
+              </section>
+              <section>
+                <h5>Continue Watching</h5>
+                <div class="movie-slider">
+                  <div class="card movie-card">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFsBCYXxz06Rqj-0UR9Uy3o6R-r1Dra2Tx6w&s"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://qqcdnpictest.mxplay.com/pic/bce7ae02445dad432bdab581e180ceef/en/2x3/312x468/d5f863cd13cc307123989701f8b72fdf_1280x1920.webp"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://m.media-amazon.com/images/I/91AwiX6Z6BL.jpg"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://wp.scoopwhoop.com/wp-content/uploads/2024/04/03170645/image-1.png"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNHbiynGddWiwSXEmfcjw1vlNdyE0zjYIMfQ&s"
+                      alt="movie-img"
+                    />
+                  </div>
+                  <div class="card movie-card">
+                    <img
+                      src="https://qqcdnpictest.mxplay.com/pic/5fac1cba6cb2cbe60da66436156ab0ac/en/2x3/312x468/test_pic1737361716276.webp"
+                      alt="movie-img"
+                    />
+                  </div>
+
+                  <div class="card movie-card">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFsBCYXxz06Rqj-0UR9Uy3o6R-r1Dra2Tx6w&s"
+                      alt="movie-img"
+                    />
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col">
+            <section class="popular-movie-section mb-3">
+              <h5>Popular Movies</h5>
+
+              <div class="d-flex gap-2 my-3">
+                <div class="card popular-movie-card">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/850/1000/jn3hocw0/poster/j/s/q/medium-hollywood-movie-wall-poster-pirates-of-the-caribbean-dead-original-imaf9uv7zzgp6wvg.jpeg?q=90&crop=false"
+                    alt="movie-img"
+                  />
+                </div>
+                <div>
+                  <p>John Wick</p>
+                  <small>Action, Horror</small>
+                  <p class="text-white mt-4">
+                    <span class="badge text-bg-warning">IMDB</span> 7.5
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2 my-3">
+                <div class="card popular-movie-card">
+                  <img
+                    src="https://wp.scoopwhoop.com/wp-content/uploads/2024/04/03170645/image-1.png"
+                    alt="movie-img"
+                  />
+                </div>
+                <div>
+                  <p>Damsel</p>
+                  <small>Action, Horror</small>
+                  <p class="text-white mt-4">
+                    <span class="badge text-bg-warning">IMDB</span> 8
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2 my-3">
+                <div class="card popular-movie-card">
+                  <img
+                    src="https://qqcdnpictest.mxplay.com/pic/bce7ae02445dad432bdab581e180ceef/en/2x3/312x468/d5f863cd13cc307123989701f8b72fdf_1280x1920.webp"
+                    alt="movie-img"
+                  />
+                </div>
+                <div>
+                  <p>Jumanji</p>
+                  <small>Action, Horror</small>
+                  <p class="text-white mt-4">
+                    <span class="badge text-bg-warning">IMDB</span> 9
+                  </p>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-outline-secondary w-100">View More</button>
+              </div>
+            </section>
+              <section class="popular-movie-section">
+              <h5>Favorites</h5>
+
+              <div class="d-flex gap-2 my-3">
+                <div class="card popular-movie-card">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/850/1000/jn3hocw0/poster/j/s/q/medium-hollywood-movie-wall-poster-pirates-of-the-caribbean-dead-original-imaf9uv7zzgp6wvg.jpeg?q=90&crop=false"
+                    alt="movie-img"
+                  />
+                </div>
+                <div>
+                  <p>John Wick</p>
+                  <small>Action, Horror</small>
+                  <p class="text-white mt-4">
+                    <span class="badge text-bg-warning">IMDB</span> 7.5
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2 my-3">
+                <div class="card popular-movie-card">
+                  <img
+                    src="https://wp.scoopwhoop.com/wp-content/uploads/2024/04/03170645/image-1.png"
+                    alt="movie-img"
+                  />
+                </div>
+                <div>
+                  <p>Damsel</p>
+                  <small>Action, Horror</small>
+                  <p class="text-white mt-4">
+                    <span class="badge text-bg-warning">IMDB</span> 8
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2 my-3">
+                <div class="card popular-movie-card">
+                  <img
+                    src="https://qqcdnpictest.mxplay.com/pic/bce7ae02445dad432bdab581e180ceef/en/2x3/312x468/d5f863cd13cc307123989701f8b72fdf_1280x1920.webp"
+                    alt="movie-img"
+                  />
+                </div>
+                <div>
+                  <p>Jumanji</p>
+                  <small>Action, Horror</small>
+                  <p class="text-white mt-4">
+                    <span class="badge text-bg-warning">IMDB</span> 9
+                  </p>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-outline-secondary w-100">View More</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true, // show next/prev arrows
+          dots: true, // show navigation dots
+          autoplay: true, // enable autoplay
+          autoplaySpeed: 3000, // 3 seconds delay
+        });
+
+        $(".movie-slider").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          arrows: true, // show next/prev arrows
+          dots: true, // show navigation dots
+          autoplay: true, // enable autoplay
+          autoplaySpeed: 3000, // 3 seconds delay
+        });
+      });
+    </script>
+  </body>
+</html>
